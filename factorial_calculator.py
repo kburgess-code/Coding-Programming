@@ -9,11 +9,14 @@ def factorial():
     # Write your code here
     total = 0
     x = int(input("Enter a number: "))
-    for i in range(x, 0,-1):
-        print(i)
-        total = i*(i-1)
+    for i in range(x, 1,-1):
+        #print("i:",i)
+        #print("i-1:",i - 1)
+        print("i*(i-1)",i*(i-1))
+        total = total + (i*(i-1))
+        print("\n")
 
-    print(total)
+    print("Total:",total)
 
 
 
