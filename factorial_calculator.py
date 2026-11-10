@@ -7,7 +7,15 @@ Instructor: Burgess
 
 def factorial():
     # Write your code here
-    print("I'm inside factorial function...")
+    total = 0
+    x = int(input("Enter a number: "))
+    for i in range(x, 0,-1):
+        print(i)
+        total = i*(i-1)
+
+    print(total)
+
+
 
 
 # You should not need to change any code below this point
