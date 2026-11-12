@@ -7,16 +7,20 @@ Instructor: Burgess
 
 def factorial():
     # Write your code here
-    total = 0
+    total = 1
     x = int(input("Enter a number: "))
-    for i in range(x, 1,-1):
-        #print("i:",i)
-        #print("i-1:",i - 1)
-        print("i*(i-1)",i*(i-1))
-        total = total + (i*(i-1))
-        print("\n")
-
-    print("Total:",total)
+    if x == 0:
+        print("!0 = 1")
+    else:
+        #print(f"{x}! = ", end="")
+        for i in range(x, 0,-1):
+            print(f'#{i}#')
+            if i > 0:
+                print(f"{i} * ", end="")
+            else:
+                print(f"END")
+            total *= i
+        print(" = ",total)
 
 
 
