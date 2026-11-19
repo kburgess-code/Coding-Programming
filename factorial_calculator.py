@@ -11,15 +11,17 @@ def factorial():
     x = int(input("Enter a number: "))
     if x == 0:
         print("!0 = 1")
+
     else:
-        #print(f"{x}! = ", end="")
+        print(f"{x}! = ", end="")
+
         for i in range(x, 0,-1):
-            print(f'#{i}#')
-            if i > 0:
+            if i > 1:
                 print(f"{i} * ", end="")
             else:
-                print(f"END")
+                print(f"{i}", end="")
             total *= i
+
         print(" = ",total)
 
 
